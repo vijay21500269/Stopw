@@ -1,0 +1,67 @@
+/* src/Stopwatch.css */
+.stopwatch {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #e5e5e500; /* Light background color */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(195, 189, 189, 0.94); /* Box shadow for 3D effect */
+  margin: 20px auto; /* Center the stopwatch with margin */
+  max-width: 400px; /* Maximum width of the stopwatch container */
+}
+
+.display {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color for contrast */
+  background-color: #6d90ae; /* White background for the time display */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for time display */
+}
+
+.controls button {
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #050505;
+  background-color: #98acad; /* Blue background for buttons */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.controls button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.controls button:disabled {
+  background-color: #37abb8; /* Gray background for disabled state */
+  cursor: not-allowed;
+}
+
+.laps {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 300px; /* Limit width of lap times section */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.laps h2 {
+  color: #007bff; /* Blue color for lap times heading */
+}
+
+.laps ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.laps li {
+  font-size: 18px;
+  border-bottom: 1px solid #fc1b1b; /* Light gray border for list items */
+  padding: 10px 0;
+  color: #333; /* Dark text color for list items */
+}
